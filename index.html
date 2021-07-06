@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>My Movie List</h1>
+    </header>
+    <main>
+        <section class="info-section">
+            <fieldset>
+                <legend>New Movie</legend><br>
+                <form id="movie-form">
+                    <label for="movieName">Name</label><br>
+                    <input type="text" id="movieName" required><br>
+                    <label for="movieImg">Movie Image</label><br>
+                    <select id="movieImg">
+                        <option value="action">action</option>
+                        <option value="adventure">adventure</option>
+                        <option value="animation">animation</option>
+                        <option value="comedy">comedy</option>
+                        <option value="detective">detective</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="history">history</option>
+                        <option value="horror">horror</option>
+                        <option value="musical">musical</option>
+                        <option value="pirate">pirate</option>
+                        <option value="romantic">romantic</option>
+                        <option value="sci-fi">sci-fi</option>
+                        <option value="war">war</option>
+                        <option value="western">western</option>
+                    </select><br>
+                    <label for="year">Release</label><br>
+                    <input type="year" id="year" required><br>
+                    <button class="save"type="submit">Save</button>
+                    <button type="submit" class="clear" id="clear">Clear LS</button>
+                </form>
+            </fieldset>
+        </section>
+        <section class="result-section" id="movie-table">
+
+        </section>
+    </main>
+    <footer>all right reserved 2021 &copy; ASAC</footer>
+    <script src="./app.js"></script>
+</body>
+</html>
